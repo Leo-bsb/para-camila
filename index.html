@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para você 💚</title>
+
+  <!-- Favicon emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💚</text></svg>" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ─── HERO ───────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="hero-blob hero-blob-3"></div>
+
+  <p class="hero-tag">feito só pra você 💚</p>
+
+  <h1 class="hero-title">
+    Abra em caso<br>de <em>qualquer coisa</em>
+  </h1>
+
+  <p class="hero-subtitle">
+    Porque mesmo estando longe, quero estar do seu lado em cada momento — 
+    nos bons, nos difíceis e nos do dia a dia.
+  </p>
+
+  <div class="hero-counters">
+    <div class="counter-block">
+      <span class="counter-value" id="days-together">—</span>
+      <span class="counter-label">dias juntos</span>
+    </div>
+    <div class="counter-block">
+      <span class="counter-value">∞</span>
+      <span class="counter-label">te amo</span>
+    </div>
+    <div class="counter-block">
+      <span class="counter-value">1</span>
+      <span class="counter-label">pessoa especial</span>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>role para baixo</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ─── NAV ────────────────────────────────────────────────────── -->
+<nav>
+  <a href="#emergencias">💌 Situações</a>
+  <a href="#fotos">📸 Fotos</a>
+  <a href="#playlist">🎵 Playlist</a>
+  <a href="#amo">💚 Te amo porque</a>
+  <a href="#timeline">✨ Nossa história</a>
+  <a href="#encontro">📅 Próximo encontro</a>
+</nav>
+
+<!-- ─── SEÇÃO: ABRA EM CASO DE ─────────────────────────────────── -->
+<section id="emergencias">
+  <div class="section-inner">
+    <p class="section-label reveal">para qualquer momento</p>
+    <h2 class="section-title reveal">Abra em caso de <span>qualquer sentimento</span></h2>
+
+    <div class="cards-grid">
+
+      <!-- Card 1 -->
+      <div class="card reveal" onclick="openModal('saudade')">
+        <div class="card-header">
+          <div class="card-emoji">🌿</div>
+          <h3 class="card-title">Se sentir minha saudade</h3>
+        </div>
+        <div class="card-body">
+          Uma mensagem minha quentinha esperando por você.
+          <br><span class="card-pill">Abrir 💚</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card pink reveal" onclick="openModal('choro')">
+        <div class="card-header">
+          <div class="card-emoji">🌸</div>
+          <h3 class="card-title">Se estiver chorando</h3>
+        </div>
+        <div class="card-body">
+          Às vezes a gente precisa sentir antes de seguir. Estou aqui.
+          <br><span class="card-pill">Abrir 🩷</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card reveal" onclick="openModal('dormir')">
+        <div class="card-header">
+          <div class="card-emoji">🌙</div>
+          <h3 class="card-title">Se não conseguir dormir</h3>
+        </div>
+        <div class="card-body">
+          Uma historinha e uma playlist de ninar especial.
+          <br><span class="card-pill">Abrir 💚</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card pink reveal" onclick="openModal('motivacao')">
+        <div class="card-header">
+          <div class="card-emoji">⭐</div>
+          <h3 class="card-title">Se precisar de motivação</h3>
+        </div>
+        <div class="card-body">
+          Um lembrete de tudo que você já conquistou.
+          <br><span class="card-pill">Abrir 🩷</span>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card reveal" onclick="openModal('ansiedade')">
+        <div class="card-header">
+          <div class="card-emoji">🍃</div>
+          <h3 class="card-title">Se estiver ansiosa</h3>
+        </div>
+        <div class="card-body">
+          Respira. Vou te ajudar a voltar ao presente.
+          <br><span class="card-pill">Abrir 💚</span>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card pink reveal" onclick="openModal('raiva')">
+        <div class="card-header">
+          <div class="card-emoji">🌺</div>
+          <h3 class="card-title">Se estiver com raiva de mim</h3>
+        </div>
+        <div class="card-body">
+          Ok, pode ficar brava. Mas lê isso antes 😅
+          <br><span class="card-pill">Abrir 🩷</span>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card reveal" onclick="openModal('hopeless')">
+        <div class="card-header">
+          <div class="card-emoji">🌤️</div>
+          <h3 class="card-title">Se estiver sem esperanças</h3>
+        </div>
+        <div class="card-body">
+          Quando tudo parece pesado demais, tenho algo pra você ver.
+          <br><span class="card-pill">Abrir 💚</span>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card pink reveal" onclick="openModal('bomdia')">
+        <div class="card-header">
+          <div class="card-emoji">☀️</div>
+          <h3 class="card-title">Bom dia — assim, do nada</h3>
+        </div>
+        <div class="card-body">
+          Começar o dia com um sorriso nunca fez mal a ninguém.
+          <br><span class="card-pill">Abrir 🩷</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── MODAIS ──────────────────────────────────────────────────── -->
+
+<!-- Modal: Saudade -->
+<div class="modal-overlay" id="modal-saudade">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal(this)">×</button>
+    <div class="modal-top">
+      <div class="modal-emoji">🌿</div>
+      <div>
+        <h3 class="modal-heading">Ei, minha saudade de você é enorme.</h3>
+        <p class="modal-sub">— uma mensagem sua espera aqui 💚</p>
+      </div>
+    </div>
+    <div class="modal-content">
+      <!-- 🔧 EDITE: escreva sua mensagem para quando ela sentir saudade -->
+      <p>Oi, meu amor. Se você abriu isso, é porque a saudade bateu forte — e saiba que a minha também tá aqui, do mesmo tamanho.</p>
+      <p>Eu penso em você todos os dias. No seu jeito de rir, na sua voz, nos seus olhos. A distância é real, mas o que eu sinto por você é muito mais real ainda.</p>
+      <p>Fica tranquila: cada dia que passa é um dia mais perto. E enquanto isso não chega, sabe que meu coração já tá do seu lado. 💚</p>
+      <p>Te amo muito. Vai lá tomar uma água, respira, e me manda mensagem quando puder — fico feliz toda vez que apareço no seu nome.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Choro -->
+<div class="modal-overlay" id="modal-choro">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal(this)">×</button>
+    <div class="modal-top">
+      <div class="modal-emoji pink">🌸</div>
+      <div>
+        <h3 class="modal-heading">Tudo bem chorar.</h3>
+        <p class="modal-sub">— estou aqui do lado 🩷</p>
+      </div>
+    </div>
+    <div class="modal-content">
+      <!-- 🔧 EDITE: mensagem de consolo -->
+      <p>Deixa o choro vir. Não precisa ser forte o tempo todo — e principalmente não precisa fingir que tá bem quando não tá.</p>
+      <p>Se eu pudesse, estaria aí do seu lado agora, te abraçando sem dizer nada. Às vezes um abraço silencioso é mais do que qualquer palavra.</p>
+      <p>Quando parar de chorar, lava o rosto, toma uma água gelada e me conta o que aconteceu, tá? Você não precisa carregar isso sozinha.</p>
+      <p>Você é a pessoa mais forte que eu conheço — e isso inclui ser forte o suficiente para sentir. Te amo demais. 🩷</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Dormir -->
+<div class="modal-overlay" id="modal-dormir">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal(this)">×</button>
+    <div class="modal-top">
+      <div class="modal-emoji">🌙</div>
+      <div>
+        <h3 class="modal-heading">Fecha os olhos, meu amor.</h3>
+        <p class="modal-sub">— histórias e músicas de ninar 🌿</p>
+      </div>
+    </div>
+    <div class="modal-content">
+      <!-- 🔧 EDITE: história curta + link da playlist de ninar -->
+      <p>Era uma vez um casal que morava longe, mas toda noite antes de dormir, os dois olhavam pro mesmo céu e pensavam um no outro. E de alguma forma, os sonhos deles sempre se encontravam.</p>
+      <p>Pensa nisso enquanto fecha os olhos: estou olhando pro mesmo céu que você. E quando você acordar amanhã, eu ainda vou estar aqui.</p>
+      <p>Boa noite, meu amor. Dorme com os anjinhos. 🌙</p>
+      <p>
+        🎵 <a href="https://open.spotify.com/playlist/SEU-LINK-AQUI" target="_blank" style="color: var(--teal-deep)">
+          Playlist de ninar → (adicione o link do Spotify)
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Motivação -->
+<div class="modal-overlay" id="modal-motivacao">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal(this)">×</button>
+    <div class="modal-top">
+      <div class="modal-emoji pink">⭐</div>
+      <div>
+        <h3 class="modal-heading">Olha o quanto você já chegou.</h3>
+        <p class="modal-sub">— uma lista feita com orgulho 🩷</p>
+      </div>
+    </div>
+    <div class="modal-content">
+      <!-- 🔧 EDITE: conquistas reais dela que você admira -->
+      <p><strong>Coisas que você já conquistou e que me enchem de orgulho:</strong></p>
+      <p>✅ [Conquista 1 dela — ex: terminou a faculdade]<br>
+         ✅ [Conquista 2 — ex: aprendeu a fazer aquele prato difícil]<br>
+         ✅ [Conquista 3]<br>
+         ✅ [Conquista 4]<br>
+         ✅ Me conquistou — e não foi fácil 😄</p>
+      <p>Você é capaz de muito mais do que imagina. E eu vejo isso em você todos os dias.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Ansiedade -->
+<div class="modal-overlay" id="modal-ansiedade">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal(this)">×</button>
+    <div class="modal-top">
+      <div class="modal-emoji">🍃</div>
+      <div>
+        <h3 class="modal-heading">Respira. Estou aqui.</h3>
+        <p class="modal-sub">— vamos juntos, devagar 💚</p>
+      </div>
+    </div>
+    <div class="modal-content">
+      <!-- 🔧 EDITE: mensagem + técnica de respiração se quiser -->
+      <p>Para tudo. Respira fundo agora comigo: inspira por 4 segundos... segura por 4... solta por 6. De novo.</p>
+      <p>Você está segura. O que está sentindo vai passar — sempre passa. Sua mente está trabalhando demais agora, e tudo bem.</p>
+      <p>Me conta o que tá acontecendo quando puder. Não precisa ter palavras certas, pode ser um emoji, uma palavra, o que vier.</p>
+      <p>Você não está sozinha nisso. 🍃</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Raiva -->
+<div class="modal-overlay" id="modal-raiva">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal(this)">×</button>
+    <div class="modal-top">
+      <div class="modal-emoji pink">🌺</div>
+      <div>
+        <h3 class="modal-heading">Ok, pode ficar brava.</h3>
+        <p class="modal-sub">— mas lê isso antes 😅🩷</p>
+      </div>
+    </div>
+    <div class="modal-content">
+      <!-- 🔧 EDITE: texto bem-humorado e honesto -->
+      <p>Primeiro: você tem razão. Provavelmente. Quase sempre. Você tem razão.</p>
+      <p>Segundo: eu sei que às vezes eu erro, às vezes sou idiota, e às vezes a distância faz tudo parecer pior. Mas saiba que nunca é de má vontade.</p>
+      <p>Terceiro — e mais importante — eu te amo demais pra deixar qualquer coisa ficar grande demais entre a gente. Quando você quiser conversar, estou aqui.</p>
+      <p>Até lá, aqui vai um pedido de desculpas antecipado e retroativo 😅💚</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Sem esperanças -->
+<div class="modal-overlay" id="modal-hopeless">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal(this)">×</button>
+    <div class="modal-top">
+      <div class="modal-emoji">🌤️</div>
+      <div>
+        <h3 class="modal-heading">O sol volta. Sempre.</h3>
+        <p class="modal-sub">— especialmente pra você 💚</p>
+      </div>
+    </div>
+    <div class="modal-content">
+      <!-- 🔧 EDITE: mensagem de esperança -->
+      <p>Quando tudo parece escuro demais, lembra: você já passou por noites difíceis antes — e sempre amanheceu.</p>
+      <p>Não precisa ter esperança agora. Só precisa passar por esse momento. E eu vou passar com você.</p>
+      <p>Pensa em uma coisa boa que a gente vai fazer quando se encontrar. Um lugar pra ir, um filme pra assistir abraçados, uma comida pra pedir. Se agarra nesse plano.</p>
+      <p>Eu acredito em você, mesmo quando você não consegue acreditar em si mesma. E não vou parar de acreditar. 💚</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Bom dia -->
+<div class="modal-overlay" id="modal-bomdia">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal(this)">×</button>
+    <div class="modal-top">
+      <div class="modal-emoji pink">☀️</div>
+      <div>
+        <h3 class="modal-heading">Bom dia, meu amor! ☀️</h3>
+        <p class="modal-sub">— hoje vai ser um dia ótimo 🩷</p>
+      </div>
+    </div>
+    <div class="modal-content">
+      <!-- 🔧 EDITE: mensagem animada de bom dia -->
+      <p>Acordou! Eu ia te ligar mas acho que você merece pelo menos uns 5 minutinhos antes de me ouvir falar 😄</p>
+      <p>Hoje vai ser um dia incrível. Por quê? Porque você vai estar nele. Simples assim.</p>
+      <p>Toma aquele café que você gosta, põe uma música boa, e sabe que tem alguém bem longe daqui torcendo por você hoje e sempre.</p>
+      <p>Te amo! Agora vai lá arrasar 🩷✨</p>
+    </div>
+  </div>
+</div>
+
+<!-- ─── SEÇÃO: FOTOS ────────────────────────────────────────────── -->
+<section id="fotos">
+  <div class="section-inner">
+    <p class="section-label reveal">nossas memórias</p>
+    <h2 class="section-title reveal">Uma galeria só <span>nossa</span></h2>
+
+    <div class="photos-grid">
+
+      <!-- 🔧 Para adicionar fotos:
+           1. Crie uma pasta "images/" na raiz do site
+           2. Coloque as fotos lá (ex: foto1.jpg, foto2.jpg)
+           3. Substitua src="images/foto1.jpg" com o nome correto
+           4. Remova o <div class="photo-placeholder"> e use <img> no lugar
+      -->
+
+      <div class="photo-item reveal" onclick="openLightbox('')">
+        <div class="photo-placeholder">
+          <span class="ph-icon">📸</span>
+          <span>foto 1<br><small>images/foto1.jpg</small></span>
+        </div>
+        <!-- Quando adicionar a foto, use:
+        <img src="images/foto1.jpg" alt="Nós dois" />
+        -->
+      </div>
+
+      <div class="photo-item reveal" onclick="openLightbox('')">
+        <div class="photo-placeholder">
+          <span class="ph-icon">📸</span>
+          <span>foto 2<br><small>images/foto2.jpg</small></span>
+        </div>
+      </div>
+
+      <div class="photo-item reveal" onclick="openLightbox('')">
+        <div class="photo-placeholder">
+          <span class="ph-icon">📸</span>
+          <span>foto 3<br><small>images/foto3.jpg</small></span>
+        </div>
+      </div>
+
+      <div class="photo-item reveal" onclick="openLightbox('')">
+        <div class="photo-placeholder">
+          <span class="ph-icon">📸</span>
+          <span>foto 4<br><small>images/foto4.jpg</small></span>
+        </div>
+      </div>
+
+      <div class="photo-item reveal" onclick="openLightbox('')">
+        <div class="photo-placeholder">
+          <span class="ph-icon">📸</span>
+          <span>foto 5<br><small>images/foto5.jpg</small></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <img src="" alt="foto" />
+</div>
+
+<!-- ─── SEÇÃO: PLAYLIST ────────────────────────────────────────── -->
+<section id="playlist">
+  <div class="section-inner">
+    <p class="section-label reveal">nossas músicas</p>
+    <h2 class="section-title reveal">A trilha sonora <span>do nosso amor</span></h2>
+
+    <div class="playlist-embed reveal">
+      <!-- 🔧 EDITE: cole o link embed do Spotify da sua playlist
+           No Spotify: abra a playlist → "..." → Compartilhar → Incorporar playlist
+           Cole o iframe completo aqui (substitua o src abaixo)
+      -->
+      <iframe
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4WYpdgoIcn6?utm_source=generator&theme=0"
+        width="100%"
+        height="380"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <p class="playlist-hint reveal">
+      💚 Para colocar a playlist de vocês: abra no Spotify → "..." → Compartilhar → Incorporar playlist
+    </p>
+  </div>
+</section>
+
+<!-- ─── SEÇÃO: TE AMO PORQUE ──────────────────────────────────── -->
+<section id="amo">
+  <div class="section-inner">
+    <p class="section-label reveal">do coração</p>
+    <h2 class="section-title reveal">Razões para <span>te amar</span></h2>
+
+    <div class="love-list">
+      <!-- 🔧 EDITE: coloque razões verdadeiras e específicas sobre ela -->
+      <div class="love-item reveal">
+        <span class="love-num">01</span>
+        <p class="love-text">Seu jeito de rir — quando é de verdade, você ilumina tudo ao redor.</p>
+      </div>
+      <div class="love-item reveal">
+        <span class="love-num">02</span>
+        <p class="love-text">A forma como você cuida das pessoas que ama, sempre com tanto carinho.</p>
+      </div>
+      <div class="love-item reveal">
+        <span class="love-num">03</span>
+        <p class="love-text">[Escreva algo específico e verdadeiro sobre ela aqui]</p>
+      </div>
+      <div class="love-item reveal">
+        <span class="love-num">04</span>
+        <p class="love-text">[Algo que você admira nela]</p>
+      </div>
+      <div class="love-item reveal">
+        <span class="love-num">05</span>
+        <p class="love-text">[Um detalhe pequeno que você ama nela]</p>
+      </div>
+      <div class="love-item reveal">
+        <span class="love-num">06</span>
+        <p class="love-text">[Como ela te faz sentir]</p>
+      </div>
+      <div class="love-item reveal">
+        <span class="love-num">07</span>
+        <p class="love-text">[Uma lembrança especial envolvendo ela]</p>
+      </div>
+      <div class="love-item reveal">
+        <span class="love-num">08</span>
+        <p class="love-text">Por tudo isso e por mil coisas que eu não consigo colocar em palavras. 💚</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SEÇÃO: LINHA DO TEMPO ──────────────────────────────────── -->
+<section id="timeline">
+  <div class="section-inner">
+    <p class="section-label reveal">do começo até aqui</p>
+    <h2 class="section-title reveal">Nossa <span>história</span></h2>
+
+    <div class="timeline-list">
+      <!-- 🔧 EDITE: coloque as datas e momentos reais de vocês -->
+      <div class="timeline-item reveal">
+        <p class="timeline-date">[02/2018]</p>
+        <h4 class="timeline-title">A gente se conheceu 💚</h4>
+        <p class="timeline-desc">[Na van do Tio Roberto, em uma segunda de manhã a caminho do CEF 08]</p>
+      </div>
+      <div class="timeline-item reveal">
+        <p class="timeline-date">[29/01/2022]</p>
+        <h4 class="timeline-title">Primeiro encontro</h4>
+        <p class="timeline-desc">[Nosso primeiro encontro no shopping, assistindo Homem-Aranha: Sem Volta Para Casa no cinemam]</p>
+      </div>
+      <div class="timeline-item reveal">
+        <p class="timeline-date">[Data]</p>
+        <h4 class="timeline-title">Ficamos juntos 🩷</h4>
+        <p class="timeline-desc">[O momento em que vocês assumiram o relacionamento.]</p>
+      </div>
+      <div class="timeline-item reveal">
+        <p class="timeline-date">[Data]</p>
+        <h4 class="timeline-title">[Momento especial]</h4>
+        <p class="timeline-desc">[Viagem juntos? Primeira vez que se viram depois da distância? Aniversário especial?]</p>
+      </div>
+      <div class="timeline-item reveal">
+        <p class="timeline-date">Hoje</p>
+        <h4 class="timeline-title">Ainda muito para viver ✨</h4>
+        <p class="timeline-desc">E cada capítulo que ainda vem vai ser melhor do que o anterior. Te amo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SEÇÃO: PRÓXIMO ENCONTRO ───────────────────────────────── -->
+<section id="encontro">
+  <div class="section-inner">
+    <p class="section-label reveal">a espera tem fim</p>
+    <h2 class="section-title reveal">Próximo <span>encontro</span></h2>
+
+    <p class="encontro-msg reveal">
+      <!-- 🔧 EDITE: descreva o próximo encontro planejado -->
+      Cada segundo que passa é um segundo mais perto de te abraçar de novo.
+    </p>
+
+    <div class="countdown-wrap reveal">
+      <div class="cd-block">
+        <div class="cd-value" id="cd-days">--</div>
+        <div class="cd-unit">dias</div>
+      </div>
+      <div class="cd-block">
+        <div class="cd-value" id="cd-hours">--</div>
+        <div class="cd-unit">horas</div>
+      </div>
+      <div class="cd-block">
+        <div class="cd-value" id="cd-minutes">--</div>
+        <div class="cd-unit">minutos</div>
+      </div>
+      <div class="cd-block">
+        <div class="cd-value" id="cd-seconds">--</div>
+        <div class="cd-unit">segundos</div>
+      </div>
+    </div>
+
+    <!-- 🔧 EDITE: coloque seu número do WhatsApp (formato internacional, sem + e espaços) -->
+    <a href="https://wa.me/5500000000000?text=Te+amo+%F0%9F%92%9A" target="_blank" class="btn-call reveal">
+      📞 Me liga agora? 💚
+    </a>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────────── -->
+<footer>
+  <span class="footer-heart">💚</span>
+  Feito com amor, especialmente pra você.<br>
+  <!-- 🔧 EDITE: coloque o nome dela -->
+  Para <em>[nome dela]</em>, com todo o meu amor.
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
