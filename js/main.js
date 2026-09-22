@@ -1,9 +1,7 @@
 /* ─── Config ────────────────────────────────────────────────── */
 // 🔧 EDIT THIS: Data início do namoro (ano, mês-1, dia)
-const START_DATE = new Date(2024, 0, 1); // ex: 1 de Janeiro de 2024
+const START_DATE = new Date(2021, 0, 1); // ex: 1 de Janeiro de 2021
 
-// 🔧 EDIT THIS: Data do próximo encontro (ano, mês-1, dia, hora, minuto)
-const NEXT_MEETING = new Date(2025, 6, 20, 18, 0); // ex: 20 de Julho de 2025
 
 /* ─── Days together counter ─────────────────────────────────── */
 function updateDaysTogether() {
